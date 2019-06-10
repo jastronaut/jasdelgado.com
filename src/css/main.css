@@ -1,0 +1,407 @@
+.content {
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.social-ico {
+    width: 50px;
+    height: auto;
+    transition: all 0.1s ease-in;
+}
+
+.social-ico:hover {
+    transform: translate(0, -10%);
+    transition: transform 0.1 ease-in;
+}
+
+.bottom {
+    bottom: -1px;
+    position: fixed;
+    text-align: center;
+    width: inherit;
+}
+
+.bottom > .nav-link {
+    text-align: center;
+}
+
+h1#bighead {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 6%;
+}
+
+h1.content-head {
+    font-size: 2.5em;
+    margin-bottom: 1%;
+}
+
+#everything {
+    padding: 1vh 1vw;
+}
+
+* {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.line-div {
+    background-image: url('../../public/img/common/line.png');
+    background-size: 100%;
+    height: 5px;
+    margin-left: 3%;
+}
+
+.line-sm {
+    height: 3px;
+}
+
+.lnk {
+    text-decoration: underline;
+    color: black;
+    transition: all 0.1s ease-in;
+}
+
+.lnk:visited {
+    color: black;
+}
+.btn {
+    font-size: 110%;
+}
+
+.btn-link {
+    color: white;
+}
+
+a > .btn-link {
+    text-decoration: unset !important;
+}
+
+.btn-link:hover {
+    cursor: pointer;
+}
+
+.page-nav {
+    text-align: center;
+}
+
+.subhead {
+    margin-bottom: 1%;
+    margin-top: 3%;
+    font-size: 2em;
+    display: inline-block;
+}
+
+h2.subhead-title {
+    font-weight: bold;
+}
+
+h2.subhead-subtitle {
+    color: #aaa;
+    font-weight: lighter;
+    margin-left: 0.25em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 2% 2%;
+    border-radius: 15px;
+    background: black;
+    color: white;
+    margin-right: 3%;
+}
+
+
+.indent {
+    margin-left: 3%;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    animation-name: show-gradient-bg;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    transition: all 0.1s ease;
+}
+
+.img-fade {
+    opacity: 0.8;
+    transition: all 0.1s ease-in-out;
+}
+
+.img-fade:hover {
+    opacity: 1;
+    transition: all 0.1s ease-in-out;
+}
+
+.img-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catchphrase-area {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1% 1%;
+}
+
+div.nav-link > a.lnk {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.nav-link a, a {
+    background-color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: underline;
+    transition: all 0.1s ease-in;
+}
+
+.nav-link a:hover, a:hover {
+    background: #949cf2 linear-gradient(to left, #e05e5e, #949cf2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.2s ease-in;
+}
+
+@keyframes bg-gradient-text {
+    0% {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    25% {
+        color: rgba(0, 0, 0, 0.75);
+    }
+
+    50% {
+        color:  rgba(0, 0, 0, 0.25);
+    }
+
+    75% {
+        color:  rgba(0, 0, 0, 0);;
+    }
+}
+
+.img-feat {
+    width: inherit;
+}
+
+.img-card {
+    display: inline-grid;
+    width: 300px;
+    height: 100%;
+}
+
+.img-card > p.caption {
+    text-align: center;
+    margin-top: 2%;
+    color: #aaa;
+    overflow: auto;
+}
+
+.cat-icon {
+    width: 100px;
+    height: auto;
+}
+
+.cat-txt, .cat-icon {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.row-topic, .cat-icon {
+    transition: transform 0.1s ease-in;
+}
+
+.row-topic:hover .cat-icon {
+    transform: translate(-10%);
+    transition: transform 0.1s ease-in;
+}
+
+p.caption {
+    transition: color 0.1s ease-in;
+}
+
+.img-card:hover p.caption {
+    color: #000;
+    transition: color 0.1s ease-in;
+}
+
+.txt-gradient {
+    background: linear-gradient(to left, #e05e5e, #949cf2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1%;
+    font-weight: bolder;
+}
+
+@media screen and (max-width : 1136px)
+{
+    #bighead > br {
+        display: none;
+    }
+
+    h1#content-head {
+        font-size: 2em;
+        margin-top: 5%;
+    }
+    .nav-link {
+        display: inline;
+    }
+
+    .nav-div {
+        padding-left: 2%;
+        padding-right: 1%;
+    }
+
+    h1#bighead {
+        margin-bottom: 2%;
+    }
+
+    .line-div {
+        margin-bottom: 5%;
+    }
+
+    .page-nav {
+        position: auto;
+    }
+
+    .content-img {
+        width: 90%;
+        height: auto;
+        margin: 2% 5%;
+    }
+
+    .line-div {
+        width: 90%;
+    }
+
+    .content {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .content > p {
+        font-size: 110%;
+        line-height: 115%;
+    }
+
+    .catchphrase-area {
+        display: none;
+    }
+    
+    .btn {
+        padding: 10px 10px;
+        width: 50px;
+        text-align: center;
+    }
+
+    .btn-collection {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .btns {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .btn-single {
+        width: 70px;
+        margin: 0 auto;
+    }
+
+    h2.subhead-subtitle {
+        margin-left: 0px;
+        font-size: 1.5em;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cat-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .txt-gradient {
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 2%;
+    }
+
+    .cat-txt {
+        margin-top: 1%;
+    }
+
+}
+
+@media screen and (min-width : 1137px)
+{
+    .img-card {
+        margin-right: 2%;
+    }
+
+    .nav-div {
+        display: none;
+    }
+
+    .page-nav {
+        position: fixed;
+        left: 1.25vw;
+    }
+
+    .content-img {
+        width: auto;
+        height: 300px;
+    }
+
+    .line-div {
+        width: 300px;
+    }
+
+    .content {
+        margin-left: 20%;
+        padding-right: 3vw;
+    }
+}
+
+@keyframes show-gradient-bg {
+    0% {
+        background: black;
+    }
+
+    25% {
+        background: linear-gradient(to left, black 75%, #e05e5e, #949cf2);
+    }
+
+    75% {
+        background: linear-gradient(to left, black 25%, #e05e5e, #949cf2);
+    }
+
+    100% {
+        background: linear-gradient(to left, #e05e5e, #949cf2);
+    }
+
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+		margin-top: 20vh;
+	}
+	to {
+		opacity: 1;
+		margin-top: 0;
+	}
+}

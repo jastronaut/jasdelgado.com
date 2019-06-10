@@ -1,0 +1,186 @@
+.img-med {
+    cursor: pointer;
+    max-height: 200px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.img-med:hover, .art-img {
+    cursor: pointer;
+}
+
+#openFull {
+    float: right;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding-top: 1%;
+    padding-right: 1%;
+}
+
+#openFull a i, #openFull a i:visited {
+    color: white;
+}
+
+#bg-img-zoom {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.bgImgFade {
+    animation-name: fade-bgImg;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    transition: all 0.3s ease;
+}
+
+.imgHolderFade {
+    animation-name: fade-imgHolder;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    transition: all 0.3s ease;
+}
+
+#exit-btn {
+    top: 0;
+    float: left;
+    cursor: pointer;
+    padding-left: 1%;
+    padding-top: 1%;
+    color: white;
+}
+
+#imgHolder {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 90%;
+}
+
+#imgTitle, #imgCaption, #leftBtn, #rightBtn {
+    color: #fff;
+}
+
+#imgCaption a, #imgCaption a:visited {
+    color: #aaa;
+}
+
+#leftBtn, #rightBtn {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    z-index: 3;
+    /* width: 7vw; */
+    background-color: rgba(0, 0, 0, 0);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+#leftBtn:hover {
+    transform: translateX(-.5vw);
+}
+
+#rightBtn:hover {
+    transform: translateX(.5vw);
+}
+
+#leftBtn {
+    float: left;
+    text-align: left;
+    padding-right: 3vw;
+}
+
+#rightBtn {
+    float: right;
+    text-align: right;
+    padding-left: 3vw;
+}
+
+#imgTxt {
+    bottom: -1px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#imgTitle {
+    margin-bottom: 0;
+}
+
+#imgCaption {
+    margin-top: 0.5em;
+}
+
+#clickToClose {
+    width: 100%;
+    height: 100vw;
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+}
+
+.runAnimation {
+    animation-play-state: running;
+}
+
+.pauseAnimation {
+    animation-play-state: paused;
+}
+
+@media screen and (max-width : 900px)
+{
+    #theImg {
+        /* max-height: 80%; */
+        /* max-width: 90%; */
+        width: 80vh;
+        height: auto;
+    }
+    .art-img {
+        display: block;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width : 901px)
+{
+    #theImg {
+        max-height: 90%;
+        /* height: 90vh; */
+        width: auto;
+    }
+    .art-img {
+        display: inline;
+    }
+}
+
+@keyframes fade-bgImg {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+@keyframes fade-imgHolder {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

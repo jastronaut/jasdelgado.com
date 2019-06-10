@@ -1,0 +1,31 @@
+h2.entry-title a {
+	color: #060606;
+	transition: all 0.2s ease-in;
+}
+
+h2.entry-title a:hover {
+	background: #949cf2 linear-gradient(to left, #e05e5e, #949cf2);
+	color: #fff;
+	transition: all 0.2s ease-in;
+}
+
+/* #site-navigation {
+	padding: 2% 2%;
+} */
+/* div.site-branding {
+	padding: 2% 2%;
+	width: auto;
+	border-radius: 15px;
+} */
+
+.entry-content a {
+	color: #000;
+}
+
+.site-title a:hover, .menu-item a:hover, .entry-content a:hover {
+	background: #949cf2 linear-gradient(to left, #e05e5e, #949cf2);
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	transition: all 0.2s ease-in-out;
+}
