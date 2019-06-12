@@ -7,7 +7,7 @@
 
 import React from "react"
 
-const ProjectItem = ({title, time, subtitle, keywords, desc, git, demo, img}) => (
+const ProjectItem = ({children, title, time, subtitle, desc, git, demo, img}) => (
     <div className='project-item'>
         <h2 className='subhead subhead-title'>{title}</h2>
         <h2 className='subhead subhead-subtitle'>{time}</h2>
@@ -16,7 +16,7 @@ const ProjectItem = ({title, time, subtitle, keywords, desc, git, demo, img}) =>
             <div className="box box-60">
             <div className="project-subtitle">{subtitle}</div>
             <table className='keywords indent'>
-                {keywords}
+                {children}
             </table>
             <>{desc}</>
             <div className="btn-collection">
