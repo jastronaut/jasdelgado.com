@@ -1,14 +1,23 @@
 import React from "react"
-
-import Template from "../components/template"
 import SEO from "../components/seo"
+import Anime from 'react-anime'
+import '../css/404.css'
 
 const NotFoundPage = () => (
-  <Template>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Template>
+	<Anime easing="linear"
+		loop={true}
+		duration={3000}
+		direction='alternate'
+		backgroundColor={['#e05e5e', '#949cf2']}>
+		<div className='bigBg'>
+			<div className='centered'>
+				<h1>404: NOT FOUND</h1>
+				{/* <img src='../img/404.png' width='400px' /> */}
+				{/* <p onClick={goBack}>go back</p> */}
+				<a id='backlink' href='/'>go home</a>
+			</div>
+		</div>
+	</Anime>
 )
 
 export default NotFoundPage

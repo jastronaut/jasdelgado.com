@@ -1,0 +1,34 @@
+.bigBg {
+    color: #fff;
+    background-color: pink;
+    width:100%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.centered {
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+}
+
+#backlink {
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: underline;
+    transition: 0.2s all ease-out;
+}
+
+#backlink:hover {
+    opacity: 1;
+    text-decoration: none;
+    transition: 0.2s all ease-out;
+}
