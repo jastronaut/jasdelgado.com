@@ -1,11 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
+import LazyLoad from 'react-lazyload'
 
 // add input for alt text
 const ImgCard = ({imgsrc, caption}) => (
     <div className='img-card'>
-        { console.log(imgsrc)}
+        {/* { console.log(imgsrc)} */}
+        <LazyLoad>
         <img className='content-img img-fade' src={imgsrc} alt='' />
+        </LazyLoad>
         <p className='caption'>
             {caption}
         </p>

@@ -7,6 +7,7 @@
 
 import React from "react"
 import {X, ArrowLeft, ArrowRight, ExternalLink} from 'react-feather'
+import LazyLoad from 'react-lazyload'
 
 const BigImg = ({imgTitle, imgCaption, imgSrc, arrowClick, closeImg}) => (
     <div id="bg-img-zoom">
@@ -15,7 +16,9 @@ const BigImg = ({imgTitle, imgCaption, imgSrc, arrowClick, closeImg}) => (
     <div id="leftBtn" onClick={() => arrowClick(1)}><ArrowLeft /></div>
     <div id="rightBtn" onClick={() => arrowClick(-1)}><ArrowRight /></div>
     <div id="imgHolder">
+        <LazyLoad>
         <img id="theImg" src={'../img/art/' + imgSrc} alt="" />
+        </LazyLoad>
     </div>
     <div id="imgTxt">
         <h2 id="imgTitle">{imgTitle}</h2>
