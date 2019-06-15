@@ -1,10 +1,10 @@
 import React from "react"
 
-import Template from "../components/template"
+import TemplateAlt from "../components/templatealt"
 import SEO from "../components/seo"
 import ArtImg from "../components/artimg"
 import BigImg from "../components/bigimg"
-import EventListener from 'react-event-listener';
+import EventListener from 'react-event-listener'
 import '../css/art.css'
 import resetBgFade from "../components/imganimation"
 
@@ -191,6 +191,7 @@ class Art extends React.Component {
         this.setState({
             curImg: info
         });
+        console.log(document.querySelector("#imgHolder"));
     }
 
     closeImg(i) {
@@ -221,14 +222,12 @@ class Art extends React.Component {
                         index={this.imgCount}
                     />
                 );
-                // console.log("set " + imginfo.img + " to " + imginfo.index + "(" + this.imgCount + ")");
                 this.allImages.push(imginfo);
                 this.imgCount++;
             }
             gallery.unshift(<h3 key={year}>{year}</h3>);
         }
         this.state.curImg = images[2018][0];
-        // this.setState({curImg: images[2018][0]});
         return gallery;
     }
 
@@ -272,7 +271,7 @@ class Art extends React.Component {
 
     render() {
         return (
-            <Template>
+            <TemplateAlt>
                 <SEO title="Art" />
                 {this.makeEventListener()}
                 <BigImg
@@ -284,7 +283,7 @@ class Art extends React.Component {
                 />
                 <div className="line-div"></div>
                 {this.state.gallery}
-            </Template>
+            </TemplateAlt>
         )
     }
 }
