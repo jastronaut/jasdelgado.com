@@ -8,10 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
+import Anime from 'react-anime'
 import Sidebar from "./sidebar"
-// import "../../public/css/grid.css"
-// import "../../public/css/main.css"
 import "../css/grid.css"
 import "../css/main.css"
 
@@ -29,9 +27,11 @@ const Template = ({ children }) => (
     render={data => (
 	<>
 		<Sidebar siteTitle={data.site.siteMetadata.title} />
+    <Anime opacity={[0, 1]} translateY={['3em', '1vh']} loop={false}>
 		<main className='content' id='everything'>
 			{children}
 		</main>
+    </Anime>
 	</>
     )}
   />
