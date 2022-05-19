@@ -1,85 +1,102 @@
-/******************************************************************************
-START Glitch hello-app default styles
-******************************************************************************/
-
 :root {
-  --color-bg: #2d2d2d;
-  --color-text-main: #aaaaaa;
-  --color-accent: #88aaaa;
-  --wrapper-height: 87vh;
-  --font-family-header: monospace;
+	--color-bg: #2d2d2d;
+	--color-text-main: #aaaaaa;
+	--color-accent: #88aaaa;
+	--wrapper-height: 87vh;
+	--font-family-header: monospace;
 }
 
-/* Basic page style resets */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
 * {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 
-/* Navigation grid */
+[hidden] {
+	display: none !important;
+}
 
 .divider {
-  padding: 0 1rem;
+	padding: 0 1rem;
 }
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
 
 body {
-  font-family: monospace;
-  background-color: var(--color-bg);
-  color: var(--color-text-main);
+	font-family: 'Fira Code', monospace;
+	background-color: var(--color-bg);
+	color: var(--color-text-main);
+	text-align: center;
 }
 
 /* Page structure */
 .wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
+	min-height: var(--wrapper-height);
+	display: grid;
+	place-items: center;
+	margin: 0 1rem;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
 }
 
 .main-img {
-  max-width: 250px;
-  margin: 1rem auto;
+	max-width: 300px;
+	margin: 1rem auto;
 }
 
 #heartScene {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
 }
 
 a {
-  color: var(--color-accent);
+	color: var(--color-accent);
 }
 
 a:hover {
-  /*   font-weight: bold; */
-  font-style: italic;
+	font-style: italic;
 }
 
 h1 {
-  margin: 0;
+	margin: 0;
 }
 
 p {
-  margin-top: 0;
+	margin-top: 0;
 }
 
-/* @media max-width(800px) {
-  #heartScene {
-    bottom: 10px;
-    left: 10px;
-  }
-} */
+@keyframes slidein {
+	from {
+		transform: translateX(-20vw);
+	}
+
+	to {
+		transform: translateX(120vw);
+	}
+}
+
+#welcome-banner {
+	position: absolute;
+	animation: linear 15s infinite running slidein;
+	z-index: 50;
+	left: -100px;
+	bottom: 50px;
+}
+
+@media (min-width: 1000px) {
+	#welcome-banner {
+		animation-duration: 20s;
+	}
+}
+
+@media (prefers-reduced-motion) {
+	#welcome-banner {
+		animation-duration: 50s;
+	}
+}
