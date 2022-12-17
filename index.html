@@ -31,7 +31,7 @@
 			<div class="content" role="main">
 				<img
 					class="main-img"
-					src="https://cdn.glitch.global/534e046c-213b-4d5a-914f-a9ac337c7b64/001.png?v=1652888108338"
+					src="img/dallepfp.jpg"
 					alt="a dog in The Sims 4 named Whopper"
 				/>
 				<h1>jas delgado</h1>
@@ -40,14 +40,25 @@
 					<a href="http://github.com/jastronaut" title="github"
 						>github</a
 					>
-					|
-					<a href="https://blog.jasdelgado.com" title="blog">blog</a>
-					|
-
-					<a href="mailto:jastronaut@protonmail.com" title="email"
-						>email</a
-					>
 				</p>
+				<div>
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+						title="MDN HTML Basics"
+						style="text-decoration: none"
+						><img
+							src="img/html_learn_it_today.gif"
+							alt="HTML Learn it today!"
+						/>
+					</a>
+					<img
+						src="img/cyberliveperson.gif"
+						title="jastronaut#1010"
+					/>
+					<a href="https://jastronaut.tumblr.com" title="HTML">
+						<img src="img/hasmile.gif" title="Have a smile" />
+					</a>
+				</div>
 			</div>
 		</div>
 		<div id="welcome-banner">
@@ -120,12 +131,9 @@
 					'https://cdn.glitch.global/534e046c-213b-4d5a-914f-a9ac337c7b64/test%3Atest.png?v=1652891744891'
 				);
 
-				// it's necessary to apply these settings in order to correctly display the texture on a shape geometry
-
 				texture.wrapS = texture.wrapT = THREE.ClampToEdgeWrapping;
 				texture.repeat.set(0.01, 0.01);
 				texture.offset.set(0.4, 0.01);
-				// texture.center.set(0.5,0.5);
 
 				function addLineShape(shape, color, x, y, z, rx, ry, rz, s) {
 					// lines
@@ -201,23 +209,8 @@
 					);
 
 					mesh.position.set(x, y, z - 175);
-					// mesh.rotation.set(rx, ry + 5, rz);
 					mesh.scale.set(s, s, s);
 					group.add(mesh);
-
-					// flat shape
-					// geometry = new THREE.ShapeGeometry(shape);
-					// mesh = new THREE.Mesh(
-					//   geometry,
-					//   new THREE.MeshPhongMaterial({
-					//     color: color,
-					//     side: THREE.DoubleSide,
-					//   })
-					// );
-					// mesh.position.set(x, y, z - 125);
-					// mesh.rotation.set(rx, ry + 10, rz);
-					// mesh.scale.set(s, s, s);
-					// group.add(mesh);
 
 					// extruded shape 2
 					geometry = new THREE.ExtrudeGeometry(shape, {
