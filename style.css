@@ -100,3 +100,12 @@ p {
 		animation-duration: 50s;
 	}
 }
+
+@media screen and (max-width: 600px) {
+	#welcome-banner {
+		display: none;
+	}
+	.main-img {
+		max-width: 200px;
+	}
+}
