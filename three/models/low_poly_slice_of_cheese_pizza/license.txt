@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Slice of Cheese Pizza
+* source:	https://sketchfab.com/3d-models/low-poly-slice-of-cheese-pizza-210d8d8b58fa4cc7ad95e8828e36b9ff
+* author:	zhya (https://sketchfab.com/zzzhya)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Slice of Cheese Pizza" (https://sketchfab.com/3d-models/low-poly-slice-of-cheese-pizza-210d8d8b58fa4cc7ad95e8828e36b9ff) by zhya (https://sketchfab.com/zzzhya) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="icon"
+			href="https://cdn.glitch.global/534e046c-213b-4d5a-914f-a9ac337c7b64/favicon.ico?v=1652907914971"
+		/>
+		<title>three.js playground</title>
+		<meta
+			property="og:image"
+			content="https://cdn.glitch.global/534e046c-213b-4d5a-914f-a9ac337c7b64/test%3Atest.png?v=1652891744891"
+		/>
+		<meta name="twitter:card" content="summary" />
+
+		<style>
+			body {
+				background-color: blueviolet;
+			}
+			canvas {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://unpkg.com/three@v0.157.0/build/three.module.js",
+					"three/addons/": "https://unpkg.com/three@v0.157.0/examples/jsm/"
+				}
+			}
+		</script>
+		<!-- source script.js-->
+	</head>
+
+	<body>
+		<script type="module" src="three/script.js"></script>
+
+		<div class="content" role="main">
+			<canvas id="c" height="800px" width="500px"></canvas>
+		</div>
+	</body>
+</html>

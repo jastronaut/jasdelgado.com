@@ -1,0 +1,11 @@
+Model Information:
+* title:	McDonald's Big Mac
+* source:	https://sketchfab.com/3d-models/mcdonalds-big-mac-18377f74f2e047dda18e4431d43e6865
+* author:	3dproductmarket (https://sketchfab.com/3dproductmarketsell)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "McDonald's Big Mac" (https://sketchfab.com/3d-models/mcdonalds-big-mac-18377f74f2e047dda18e4431d43e6865) by 3dproductmarket (https://sketchfab.com/3dproductmarketsell) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
